@@ -8,6 +8,9 @@ movies = data.movies()
 
 # Setup app and layout/frontend
 app = Dash(__name__,  external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+
+server = app.server
+
 app.layout = html.Div([
     html.H2('Welcome to DSCI532 Individual Assignment 1 from Gloria :)'),
     html.Iframe(
